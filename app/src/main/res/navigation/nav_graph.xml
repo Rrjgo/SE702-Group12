@@ -1,0 +1,13 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.group12.MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.group12.LoginScreen" />
+</navigation>
