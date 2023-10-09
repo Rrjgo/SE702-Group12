@@ -36,7 +36,6 @@ import androidx.navigation.NavController
 import com.example.group12.component.BottomBar
 import com.example.group12.component.SubtitleSection
 import com.example.group12.models.HistoryRecordItem
-import com.example.group12.component.SubtitleSectionClickable
 import com.example.group12.models.PressureStatus
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -52,7 +51,7 @@ fun DataActivity(navController: NavController) {
     Column {
         // 添加TopAppBar
         TopAppBar(
-            title = { Text("Setting") },
+            title = { Text("History") },
             navigationIcon = {
                 IconButton(onClick = { navController.popBackStack() }) {
                     Icon(Icons.Filled.ArrowBack, contentDescription = "返回")
